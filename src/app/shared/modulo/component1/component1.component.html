@@ -1,0 +1,17 @@
+<p>component1 works!</p>
+
+<p [ngClass] = "{blue: isBlue }"> Texto de azul </p>
+<p [ngClass] = "{red: isRed }"> Texto de color: rojo </p>
+
+<p [ngClass] = "{txt20: age > 18 }"> Edad mayor que 18 </p>
+
+ <p [ngStyle]="{backgroundColor: colorFondo}"> Texto </p> 
+
+ <p [ngClass] = "{visible: isVisible, noVisible: !isVisible}"> Este texto puede ser visible o no </p> 
+
+ <button (click)="showHide()"> MOSTRAR/OCULTAR </button>  
+
+
+<p> Hola soy {{persona1.name}} y mi color favorito es <span [ngStyle] = "{backgroundColor: persona1.color}"> color </span></p>
+<p> Hola soy {{persona2.name}} y mi color favorito es <span [ngStyle] = "{backgroundColor: persona2.color}"> color </span></p>
+
