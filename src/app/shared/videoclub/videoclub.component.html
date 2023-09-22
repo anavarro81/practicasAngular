@@ -1,8 +1,22 @@
-<p>videoclub works!</p>
 
-<app-peliculas [name]="name"> </app-peliculas>
 
-<app-peliculas *ngFor="let film of films" [film]="film"> </app-peliculas>
+<!-- <app-peliculas [name]="name"> </app-peliculas> -->
+
+<!-- <app-peliculas *ngFor="let film of films" [film]="film"> </app-peliculas> -->
+
+<!-- <app-peliculas *ngFor="let director of directores" [director]="director"> </app-peliculas> -->
+
+
+<app-peliculas (newDirector)="addDirector($event)"> </app-peliculas>
+
+<ul>
+
+    <li *ngFor="let director of directores">
+        {{director}}
+    </li>
+
+
+</ul>
 
     
 

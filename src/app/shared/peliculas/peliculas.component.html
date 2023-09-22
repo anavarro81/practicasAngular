@@ -1,12 +1,18 @@
 
-<p> {{name}} </p>
+<!-- <p> {{name}} </p> -->
 
+<!-- 
 <div *ngIf="film">
     <h1> {{ film.titulo }} </h1>  
     <p> {{ film.director }} </p>
     <p> {{ film.anyo }} </p>
     <p> {{ film.genero }} </p>
 </div>
+-->
+<!-- <p *ngIf="director" > {{ director }}</p> -->
+
+<label> Add new Director <input #director> </label>
+<button (click)="sendNewDirector(director.value)"> Añadir Director </button>
 
 
 

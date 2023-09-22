@@ -12,7 +12,14 @@ export class VideoclubComponent {
 
   name: string = "VideoClub del Pino";
 
-  films: filmI [] = [
+  directores: string [] = [ "James Cameron", "Francis Ford Coppola", "Quentin Tarantino" ] 
+
+  addDirector (director: string ) {
+    this.directores.push(director);
+  }
+    
+
+  films: filmI [] = [    
 
     {
       "titulo": "El Padrino",
